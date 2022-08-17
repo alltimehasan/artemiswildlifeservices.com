@@ -193,40 +193,41 @@
                     <div class="col-xl-6 col-lg-6">
                         <div class="become-volunteer-page__right">
                             <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-                            <form action="http://layerdrops.com/halpes/assets/inc/sendemail.php" class="become-volunteer-page__form contact-form-validated">
+                            <form action="process/process-contact.php" class="contact-page__main-form contact-form-validated" id="contactForm" method="post" id="contactForm">
                                 <div class="row">
                                     <div class="col-xl-12">
                                         <div class="become-volunteer-page__input">
-                                            <input type="text" placeholder="Your Name" name="name">
+                                            <input type="text" placeholder="Your Name" name="name" required>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-xl-6">
                                         <div class="become-volunteer-page__input">
-                                            <input type="email" placeholder="Email Address" name="email">
+                                            <input type="email" placeholder="Email Address" name="email" required>
                                         </div>
                                     </div>
                                     <div class="col-xl-6">
                                         <div class="become-volunteer-page__input">
-                                            <input type="text" placeholder="Phone Number" name="phone">
+                                            <input type="text" placeholder="Phone Number" name="phone" required>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-xl-12">
                                         <div class="become-volunteer-page__input">
-                                            <input type="text" placeholder="Location" name="address">
+                                            <input type="text" placeholder="Location" name="location">
                                         </div>
                                     </div>                                    
                                     <div class="col-xl-12">
                                         <div class="become-volunteer-page__input">
-                                            <textarea name="message" placeholder="Write message"></textarea>
+                                            <textarea name="message" placeholder="Write message" required></textarea>
                                         </div>
-                                        <div class="g-recaptcha" data-sitekey="6LfCKrAgAAAAAGpxzdENTDLspjGNyBIdiVYopNHo"></div>
-                                        <button type="submit" class="thm-btn become-volunteer-page__btn"><i class="fas fa-arrow-circle-right"></i>Yes, I want a free estimate</button>
+                                        <div class="g-recaptcha" data-sitekey="6LcSBosaAAAAAEoYMItx5r9T_vibhJQb3mDL-IZj"></div>
+                                        <button type="submit" id="submitBtn" class="thm-btn become-volunteer-page__btn"><i class="fas fa-arrow-circle-right"></i>Yes, I want a free estimate</button>
                                     </div>
                                 </div>
+                                <div id="responseMsg"></div>
                             </form>
                         </div>
                     </div>
@@ -399,6 +400,7 @@
     <script src="assets/vendors/owl-carousel/owl.carousel.min.js"></script>
     <!-- template js -->
     <script src="assets/js/halpes.js"></script>
+    <script src="assets/js/contact-form.js"></script>
 </body>
 
 
