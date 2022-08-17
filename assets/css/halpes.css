@@ -7001,6 +7001,33 @@ h6 {
     margin-top: 10px;
 }
 
+/* Form Response Message */
+#contactForm button:disabled {
+    opacity: 0.5;
+}
+
+#responseMsg {
+    width: 100%;
+    font-size: 20px;
+}
+
+.error,
+.processing {
+    margin: 10px auto;
+    padding: 10px 0;
+    color: #b94a48;
+}
+
+.success {
+    margin: 10px auto;
+    padding: 10px 0;
+    color: #15c8a0;
+}
+
+.g-recaptcha {
+    margin-top: 10px;
+}
+
 /*--------------------------------------------------------------
 # Contact Page Google Map
 --------------------------------------------------------------*/
