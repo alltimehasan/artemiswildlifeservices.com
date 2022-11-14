@@ -1252,6 +1252,27 @@
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
 
 
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#introModal">
+        Launch demo modal
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="introModal" tabindex="-1" aria-labelledby="introModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content intro-modal-content">
+                <div class="modal-body">
+                    <video width="100%" height="100%" id="introVideo" autoplay muted>
+                        <source src="videos/Artemis Intro Video 2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <button type="button" class="btn close-btn" data-bs-dismiss="modal">Skip Intro</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <script src="assets/vendors/jquery/jquery-3.5.1.min.js"></script>
     <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendors/jarallax/jarallax.min.js"></script>
@@ -1271,6 +1292,16 @@
     <script src="assets/vendors/owl-carousel/owl.carousel.min.js"></script>
     <!-- template js -->
     <script src="assets/js/halpes.js"></script>
+
+    <!-- Intro Video -->
+    <script>
+        var myModal = new bootstrap.Modal(document.getElementById('introModal'));
+        var aud = document.getElementById("introVideo");
+        myModal.show();
+        aud.onended = function() {
+            myModal.hide();
+        };
+    </script>
 </body>
 
 

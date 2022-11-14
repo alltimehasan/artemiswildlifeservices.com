@@ -96,6 +96,35 @@ h6 {
     padding-right: 15px;
 }
 
+/* Intro Video Start */
+.intro-modal-content .modal-body {
+    padding: 0;
+}
+.intro-modal-content video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+.intro-modal-content .close-btn {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #000;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    opacity: 0.6;
+}
+.intro-modal-content .close-btn:hover {
+    opacity: 1;
+}
+/* Intro Video End */
+
 @media (min-width: 1200px) {
     .container {
         max-width: 1200px;
