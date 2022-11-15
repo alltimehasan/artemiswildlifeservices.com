@@ -4994,6 +4994,7 @@ h6 {
     position: relative;
     display: inline-block;
     margin-top: 63px;
+    width: 100%;
 }
 
 .help-them-two__donation-text-box h2 {

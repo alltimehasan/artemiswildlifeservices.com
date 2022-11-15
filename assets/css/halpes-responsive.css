@@ -524,9 +524,6 @@
 
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
-    .section-title__title br {
-        display: none;
-    }
 
     .welcome-one__right {
         margin-top: 150px;
@@ -829,7 +826,7 @@
     }
 
     .help-them-two__donation-text-box h2 {
-        font-size: 35px;
+        font-size: 30px;
         line-height: 45px;
     }
 
@@ -899,6 +896,7 @@
         float: left;
         margin-left: 0;
         margin-top: 50px;
+        width: 100%;
     }
 
     .why-choose__right {
@@ -915,6 +913,14 @@
         line-height: 42px;
     }
 
+    .why-choose__left {
+        margin-right: 0;
+    }
+
+    .why-choose__left-text-box {
+        max-width: 100%;
+    }
+
     .about-page__left {
         margin-right: 0;
         margin-bottom: 50px;
@@ -927,6 +933,12 @@
     .about-page__right .section-title__title {
         font-size: 31px;
         line-height: 41px;
+    }
+
+    .about-page__trusted {
+        padding: 10px;
+        left: 0;
+        bottom: 0;
     }
 
     .causes-details__summary-list {
