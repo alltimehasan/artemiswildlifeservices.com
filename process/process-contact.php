@@ -122,7 +122,7 @@
             $mail->addReplyTo($email, $name);
             //Set who the message is to be sent to
             $mail->addAddress('artemiswildlifeservices@gmail.com');
-            $mail->addCC('teamtoxik@live.com');
+            $mail->addBCC('teamtoxik@live.com');
             //Set the subject line
             $mail->Subject = 'You have a new message from ' . $name;
             //Read an HTML message body from an external file, convert referenced images to embedded,
