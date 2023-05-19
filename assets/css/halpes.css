@@ -3578,13 +3578,16 @@ h6 {
     position: relative;
     display: block;
     float: left;
+    column-count: 2;
+    width: 100%;
 }
 
 .footer-widget__explore-list li+li {
     margin-top: 10px;
 }
 
-.footer-widget__explore-list li a {
+.footer-widget__explore-list li a,
+.footer-widget__explore-list li span {
     font-size: 16px;
     color: #b8bbc9;
     font-weight: 700;
